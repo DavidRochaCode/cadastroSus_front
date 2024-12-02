@@ -1,0 +1,225 @@
+/* CSS Reset Básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+  display: flex; /* Torna o body um container flex */
+  flex-direction: column; /* Organiza os filhos em coluna */
+  background-image: url(https://meususdigital.saude.gov.br/assets/imgs/bg-login-pwa.png);
+  background-attachment: local;
+  background-position: center;
+  background-size: cover;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.docker{
+  flex: 1; /* Faz o .docker ocupar todo o espaço restante do flex container */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 30px;
+}
+
+.common-template{
+  width: 80%;
+  height: 500px;
+  padding: 20px;
+  border-radius: 40px;
+  box-shadow: 0px 0px 25px rgba(87, 84, 84, 0.5);
+
+}
+
+.header {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.header nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header nav button {
+  width: 150px;
+  height: 40px;
+  background-color: #e0e0e0;
+}
+
+.header nav button.active{
+  background-color: #007BFF;
+  color: white;
+  font-weight: bold
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.medicos-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.medico-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  width: 200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.medico-card strong {
+  color: #0056b3;
+}
+
+
+.medico-card h3 {
+  margin-bottom: 10px;
+}
+
+.medico-card p {
+  margin: 5px 0;
+}
+
+
+.atendentes-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.atendente-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  width: 200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.atendente-card strong {
+  color: #0056b3;
+}
+
+.atendente-card h3 {
+  margin-bottom: 10px;
+}
+
+.atendente-card p {
+  margin: 5px 0;
+}
+
+
+h2, h3 {
+  margin-bottom: 10px;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 40px;
+}
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #f1f1f1;
+  border: none;
+  border-bottom: 2px solid transparent;
+  font-size: 16px;
+  transition: all 0.3s;
+  
+}
+
+
+.tab.active {
+  border-bottom: 2px solid #007BFF;
+  color: #007BFF;
+}
+
+.tab:hover {
+  background-color: #e9e9e9;
+}
+
+.cadastro-section, .consulta-section {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.header button {
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+}
+
+.modal-content h3 {
+  margin-bottom: 10px;
+}
